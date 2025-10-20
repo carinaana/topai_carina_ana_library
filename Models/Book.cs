@@ -16,8 +16,8 @@ namespace topai_carina_ana_lab2.Models
         public DateTime PublishingDate { get; set; }
         public int? PublisherID { get; set; }
         public Publisher? Publisher { get; set; }
-
         public int? AuthorID { get; set; }
         public Author? Author { get; set; }
+        public ICollection<BookCategory>? BookCategories { get; set; }
     }
 }
