@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using topai_carina_ana_lab2.Data;
 
@@ -11,9 +12,11 @@ using topai_carina_ana_lab2.Data;
 namespace topai_carina_ana_lab2.Migrations
 {
     [DbContext(typeof(topai_carina_ana_lab2Context))]
-    partial class topai_carina_ana_lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20251029141657_Borrowings")]
+    partial class Borrowings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
